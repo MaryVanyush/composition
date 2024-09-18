@@ -33,7 +33,133 @@
   }
 }
 
-.card-group {
+.header-container{
   display: flex;
-  flex-direction: column;
-  }
+}
+
+.header-container .header{
+  width: 60%;
+  margin-right: 30px;
+}
+
+.title-container{
+  display: flex;
+  width: 100%;
+}
+
+.title-container div,
+.title-container .title-links a,
+.menu-item{
+  margin-right: 10px;
+}
+
+.currency-container{
+  display: flex;
+}
+
+.list-container,
+.menu-list{
+  padding-left: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.menu-list{
+  display: flex;
+}
+
+.news-link,
+.search-block{
+  display: flex;
+}
+
+.search-block{
+  margin-bottom: 30px;
+}
+
+.search-container{
+  width: 80%;
+  text-align: left;
+  margin-top: 13px;
+}
+
+.search-input{
+  position: relative;
+}
+
+.search-input input{
+  width: 100%;
+  padding: 20px 0px 20px 10px
+}
+
+.search-input button{
+  position: absolute;
+  top: -4px;
+  right: -13px;
+  padding: 20px 10px;
+}
+
+.search-hint span{
+  text-decoration: underline;
+}
+
+.logo{
+  padding: 0;
+  margin-right: 20px;
+  margin-left: -100px;
+}
+
+img.banner{
+  width: 100%;
+  height: 163px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.news-img{
+  width: 25px;
+  height: 25px;
+}
+
+.news-item{
+  margin: 8px 0;
+}
+
+.news-title{
+  margin: 0 8px;
+}
+
+.currency-item{
+  margin-right: 20px;
+}
+
+.card{
+  text-align: left;
+}
+
+.widget-container{
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: column;
+  margin: 30px auto;
+  grid-gap: 24px;
+  display: grid;
+}
+
+.links{
+  text-align: left;
+}
+
+.block-weather{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.current-weather{
+  font-size: 30px;
+  margin: auto 10px;
+}
+
+.other-weather{
+  display: block;
+}

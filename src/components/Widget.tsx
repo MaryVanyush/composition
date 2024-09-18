@@ -1,12 +1,16 @@
 import { ReactNode } from "react";
 
 interface WidgetProps {
+    title?: string;
     children: ReactNode;
+    type: 'header' | 'links';
 }
-export default function Widget({children}: WidgetProps) {
+
+export default function Widget({title, children, type}: WidgetProps) {
     return (
-    <div className='card-group'>
-        {children}
-    </div>
+        <div className={type}>
+            {title ? <h3  className="links-title">{title}</h3> : <></>}
+            {children}
+        </div>
     )
 }
